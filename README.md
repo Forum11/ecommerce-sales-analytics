@@ -222,9 +222,3 @@ Sources (raw)
 - The platform shows strong seasonal patterns with clear peaks during promotional periods
 - A small percentage of sellers drive the majority of revenue, following a Pareto distribution
 - Customer geography significantly influences both order value and delivery satisfaction
-
-## Contact
-
-Built by [Your Name] — [your.email@example.com](mailto:your.email@example.com)
-
-[LinkedIn](https://linkedin.com/in/yourprofile) | [GitHub](https://github.com/yourusername)
