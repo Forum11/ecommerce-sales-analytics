@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+venv/
+.venv/
+env/
+
+# Environment
+.env
+ingestion/.env
+
+# Data files (too large for git)
+ingestion/data/
+
+# Kaggle credentials
+kaggle.json
+
+# dbt
+transform/target/
+transform/dbt_packages/
+transform/dbt_internal_packages/
+transform/logs/
+transform/dbt_modules/
+transform/package-lock.yml
+
+# Power BI
+*.pbix
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
