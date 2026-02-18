@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: slv_orders_enriched
+    description: >
+      Denormalized order-level table joining orders with aggregated items,
+      payments, and reviews. Includes calculated delivery metrics.
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+
+  - name: slv_products_translated
+    description: >
+      Products with English category names via translation table join.
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
