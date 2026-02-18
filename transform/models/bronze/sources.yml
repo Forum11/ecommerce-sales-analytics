@@ -1,0 +1,47 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    description: "Raw Olist e-commerce data loaded from Kaggle via Python ingestion script."
+    tables:
+      - name: raw_orders
+        description: "Raw orders table with order-level information."
+        columns:
+          - name: order_id
+            description: "Unique identifier for each order."
+            tests:
+              - unique
+              - not_null
+      - name: raw_order_items
+        description: "Raw order items - each row is an item within an order."
+      - name: raw_order_payments
+        description: "Raw payment information for each order."
+      - name: raw_order_reviews
+        description: "Raw customer reviews for orders."
+      - name: raw_customers
+        description: "Raw customer data including location."
+        columns:
+          - name: customer_id
+            description: "Unique identifier for each customer."
+            tests:
+              - unique
+              - not_null
+      - name: raw_products
+        description: "Raw product catalog data."
+        columns:
+          - name: product_id
+            description: "Unique identifier for each product."
+            tests:
+              - unique
+              - not_null
+      - name: raw_sellers
+        description: "Raw seller data including location."
+        columns:
+          - name: seller_id
+            description: "Unique identifier for each seller."
+            tests:
+              - unique
+              - not_null
+      - name: raw_product_category_translation
+        description: "Translation of product category names from Portuguese to English."

@@ -1,0 +1,12 @@
+olist_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      port: 5432
+      user: postgres
+      password: "{{ env_var('PG_PASSWORD', '') }}"
+      dbname: olist
+      schema: public
+      threads: 4
